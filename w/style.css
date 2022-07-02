@@ -1,0 +1,58 @@
+/**
+ * Typing animation
+ */
+
+* {
+	user-select: none;
+}
+
+ @keyframes typing {
+	from { width: 0 }
+}
+
+
+@keyframes caret {
+	50% { border-right-color: transparent; }
+}
+
+h1.type {
+	font: 200% Consolas, Monaco, monospace;
+	/*width: 8.25em;*/
+	width: 14ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: .05em solid;
+	animation: typing 1s steps(14),
+	           caret 1s steps(1) infinite;
+}
+
+.holo-pop {
+	border: 1px solid #666;
+	max-width: 350px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 0 0 15px 0;
+	/*box-shadow: 0 0 19px snow;*/
+}
+
+.holo-pop > .top {
+	text-align: center;
+	max-width: 350px;
+	padding: 0px;
+	margin: 0px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid #666;
+}
+
+.holo-pop > .inner {
+	padding: 15px;
+}
+
+.holo-pop > .top > .Xbtn {
+	background-color: rgba(255, 255, 255, 0.1);
+	margin-right: 2px;
+	max-width: 30px;
+}
+
+#clockDiv {
+	max-width: 100px;
+}
