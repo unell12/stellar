@@ -7,7 +7,7 @@ function getTime(){
     const mim = date.getMinutes()
     const sec = date.getSeconds()
 
-    clock.textContent = `${time > 12 ? time - 12 : time}:${mim}`
+    clock.textContent = `${time > 12 ? time - 12 : time}:${mim < 10 ? '0' + mim : mim}`
 }
 
 setInterval(getTime, 1000)

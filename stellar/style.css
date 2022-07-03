@@ -15,14 +15,14 @@
 	50% { border-right-color: transparent; }
 }
 
-h1.type {
-	font: 200% Consolas, Monaco, monospace;
+.type {
+	font: 100% Consolas, Monaco, monospace;
 	/*width: 8.25em;*/
-	width: 14ch;
+	width: 16ch;
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: .05em solid;
-	animation: typing 1s steps(14),
+	animation: typing 1s steps(16),
 	           caret 1s steps(1) infinite;
 }
 
@@ -49,13 +49,99 @@ h1.type {
 
 .holo-pop > .top > .Xbtn {
 	position: relative;
-	right: 0;
 	background-color: rgba(255, 255, 255, 0.1);
-	margin-right: 2px;
+	margin-left: auto;
+	margin-right: 0px;
 	max-width: 30px;
 	border-left: 1px #666 solid;
+	/*float: right;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr;*/
 }
 
 #clockDiv {
 	max-width: 100px;
+}
+
+.util {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-top: 20px;
+	right: 20px;
+	float: right;
+}
+
+header ul li {
+	margin-left: 20px;
+	padding: 6px 20px;
+	border: 1px solid snow;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+header ul li a {
+	text-shadow: 0 0 .1em;
+}
+
+header ul li:hover, .enable {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 .1em snow, 0 0 .2em snow;
+}
+
+.enable {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+header ul li:hover > *, .activated > * {
+	text-shadow: 0 0 .1em snow, 0 0 .4em snow, 0 0 .5em snow;
+}
+
+.holo-pop-center {
+	border: 1px solid #666;
+	max-width: 500px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 0 0 15px 0;
+	margin: 0px auto;
+	/*box-shadow: 0 0 19px snow;*/
+}
+
+.holo-pop-center > .top {
+	text-align: center;
+	max-width: 500px;
+	padding: 0px;
+	margin: 0px;
+	background-color: rgba(255, 255, 255, 0.1);
+	/*background-color: rgba(200, 200, 255, 0.2);*/
+	border-bottom: 1px solid #666;
+}
+
+.holo-pop-center > .inner {
+	padding: 24px;
+}
+
+.title-s {
+	color: white;
+	text-shadow: 0 0 .1em bisque, 0 0 .3em bisque;
+	border-bottom: #666 1px solid;
+}
+
+.holo-pop-center > .inner > p {
+	margin-top: 10px;
+    line-height: calc(1ex / 0.32);
+	white-space: normal;
+}
+
+.holo-pop-center > .top > .Xbtn {
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.1);
+	margin-left: auto;
+	margin-right: 0px;
+	max-width: 30px;
+	border-left: 1px #666 solid;
+	/*float: right;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr;*/
 }
